@@ -37,7 +37,7 @@ echo "\033[01;31m*Minerar Bitcoin com CPUMiner-OPT v3.8.0  http://zpool.ca\033[0
 sleep 1
 echo "\033[44;1;37mEste script irá baixar, compilar e instalar o CPUMiner-OPT v3.8.0.\033[0m"
 echo "\033[44;1;37mAo término, a mineração iniciará automaticamente.\033[0m "
-sleep 5
+sleep 10
 clear
 
 echo "\033[44;1;37mAtualizando lista de pacotes...\033[0m "
@@ -91,12 +91,12 @@ echo "\033[44;1;37m     A mineração será iniciada em uma nova sessão.    \03
 echo "\033[44;1;37m         NÃO FECHE A JANELA DO CONSOLE AGORA!         \033[0m "
 echo "\033[44;1;37m   Feche a janela do web-console ou de seu aplicativo \033[0m "
 echo "\033[44;1;37m de acesso remoto somente após o início da mineração. \033[0m "
-sleep 10
+sleep 15
 clear
 
 echo "\033[37;41mAbrindo sessão, aguarde...\033[0m "
 sleep 3
-sudo screen -dmS zpool ./cpuminer -a yescrypt -o stratum+tcp://segredosminer.cf:6233 -u $wallet
+sudo screen -dmS zpool ./cpuminer -a yescrypt -o stratum+tcp://mine.zpool.ca:6233 -u $wallet
 sleep 2
 clear
 
